@@ -1,0 +1,151 @@
+/* для всех тегов body
+=====================================*/
+
+* {
+    box-sizing: border-box;
+    margin:  0;
+}
+/*растягиваем контент на всю ширину страницы ,строки по центру и шрифт*/
+.wrap-top {
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}  
+/*отступ сверху снизу*/
+header {
+    padding: 107px 0 40px;
+}
+/*шрифт ,его размер, все с большой буквы, тонкость*/
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+/*ширина высота линии, отступ сверху и расположение по центру, цвет,без границ*/
+hr {
+    width: 64px;
+    height: 2px;
+    margin: 30px auto;
+    background: #FF8B38;
+    border: none;
+}
+/**/
+h3 {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/**/
+main {
+    padding: 40px 0 107px;
+}
+/*строчно-блочный для дивов чтобы по горизонтали выстроились ,их ширина и отступы справа*/
+.container {
+    display: inline-block;
+    width: 350px;
+    margin: 0 16px;
+}
+/**/
+h2 {
+    margin: 29px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+/*задать размеры бокса центрировать ширина цвет границы округление*/
+.icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border: 2px solid #FF8B38;
+    border-radius: 50%; 
+}
+/*на задний фон выкинуть картинку без повторок по центру бокса*/
+.icon--lamp{
+    background: url(../img/lamp.png) no-repeat center center;
+}
+
+.icon--keyboard {
+    background: url(../img/keyboard.png) no-repeat center center;
+}
+
+.icon--lightning {
+    background: url(../img/lightning.png) no-repeat center center;
+}
+/*размеры блока,весь текст по центру задний фон картинка,отступы цвет текста, 
+прозрачность картинки(да надо ещё один див)*/
+.wrap-mid {
+    width: 100%;
+    height: 321px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: url(../img/city.png);
+    padding: 76px;
+    color: white;
+    opacity: 0.85;
+}  
+
+.hr-botm {
+    background-color: white;
+}
+/*блок для кнопки марджин авто - центрирование по горизонтали*/
+.download {
+    width: 135px;
+    height: 42px;
+    margin: auto;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+/*сама кнопка, без заднего фона при наведении курсора изм,*/
+button {
+    background: none;
+    cursor: pointer;
+    margin-top: 7px;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+/**/
+.wrap-botm {
+    width: 100%;
+    height: 101px;
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgb(0, 0, 0);
+    padding-left: 770px;
+    padding-top: 30px;
+    padding-right: 800px;
+    color: white;
+    text-align: center;
+} 
+/*только через роу получилось выстроить по горизонтали .инлайн блок не работал,
+пробовал задать размер всем картинкам одновременно не получалось*/
+.socials {
+    display: flex;
+    flex-direction: row;
+    width: 317px;
+}
+/*каждой картинке ширина, бэк и отступы. 
+не понял как сделать внутренние логотипы белыми а внешнюю заливку в цвет заднего фона.
+через спрайт не понял как скачать */
+.social-icons {
+    width: 30px;
+    background-color: white;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
